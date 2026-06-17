@@ -1,0 +1,11 @@
+flask
+flask-cors
+pandas
+numpy
+scikit-learn
+nltk
+joblib
+matplotlib
+wordcloud
+Pillow
+python-dotenv==1.0.0
