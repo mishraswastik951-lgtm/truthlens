@@ -9,3 +9,5 @@ matplotlib
 wordcloud
 Pillow
 python-dotenv==1.0.0
+pymongo
+gunicorn

@@ -24,11 +24,11 @@ class MLService:
         if os.path.exists(config.MODEL_PATH):
             try:
                 self._model = joblib.load(config.MODEL_PATH)
-                print(f"✅ ML model loaded from {config.MODEL_PATH}")
+                print(f"[OK] ML model loaded from {config.MODEL_PATH}")
             except Exception as e:
-                print(f"❌ Model load error: {e}")
+                print(f"[WARN] Model load error: {e}")
         else:
-            print(f"⚠️  Model not found at {config.MODEL_PATH}")
+            print(f"[WARN] Model not found at {config.MODEL_PATH}")
             print("   Run: python train_model.py")
 
     # ── Public API ────────────────────────────────────
